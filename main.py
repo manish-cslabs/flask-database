@@ -6,15 +6,15 @@ from flask_restful import Api, Resource
 app = Flask(__name__)
 api = Api(app)
 
-videos ={}
+videos ={1: "hello"}
 
 
 class Video(Resource):
-    def get(self):
-        return videos
+    def get(self, videoId):
+        return videos[videoId]
 
 
-api.add_resource(Video, "/video")
+api.add_resource(Video, "/video/<int:videoId>")
 
 
 
