@@ -16,11 +16,21 @@ for i in range(0, len(videoData)):
     response = requests.put(BASE + "/video/" + str(i), videoData[i])
     print(response.json())
 
-response = requests.delete(BASE + "/video/0")
+# response = requests.delete(BASE + "/video/0")
 
 # responseVideo = requests.put(
-#     BASE + 'video/1', {"name": "manish", "views": 1000, "likes": 10})
+#     BASE + 'video/6', {"name": "manish", "views": 1000, "likes": 10})
 # print(responseVideo.json())
+# input()
+responseVideo = requests.get(BASE + 'video/6')
+print(responseVideo.json())
 input()
-responseVideo = requests.get(BASE + 'video/2')
+
+# responseVideo = requests.patch(BASE + 'video/0', {"name": "ram5"})
+# print(responseVideo.json())
+# input()
+responseVideo = requests.delete(BASE + 'video/6')
+print(responseVideo)
+
+responseVideo = requests.get(BASE + 'video/6')
 print(responseVideo.json())
