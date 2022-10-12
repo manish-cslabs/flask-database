@@ -1,8 +1,9 @@
 # FLASK REST API using SQL
 
-- **Reference:** [Python REST API Tutorial - Building a Flask REST API](https://www.youtube.com/watch?v=GMppyAPbLYk)
+### for basic flask api notes: 
+- [https://github.com/mbharti321/flask-learning](https://github.com/mbharti321/flask-learning)
 
-
+---
 ```python
 from flask_restful import Api, Resource, reqparse, abort, fields, marshal_with
 from flask_sqlalchemy import SQLAlchemy #ORM
@@ -15,3 +16,6 @@ from flask_sqlalchemy import SQLAlchemy #ORM
 - **fields:** used to define a variable type in a serializable object
 - **marshal_with:** used to serialize and unserialize objects
 - **SQLAlchemy:** object-relational mapping library
+
+---
+- **Reference:** [Python REST API Tutorial - Building a Flask REST API](https://www.youtube.com/watch?v=GMppyAPbLYk)

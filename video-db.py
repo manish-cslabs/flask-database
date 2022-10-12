@@ -8,7 +8,7 @@ from flask_sqlalchemy import SQLAlchemy
 # reqparse: ReqParse is used to parse request parameters sent with requests
 # abort: is used to abort the request when excepion is encountered
 # fields: used to define variable type in serializable object
-# marshal_with: used toserialize and unserialize objects
+# marshal_with: used to serialize and unserialize objects
 # SQLAlchemy: object relational mapping library
 
 app = Flask(__name__)
